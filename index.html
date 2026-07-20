@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lexora | Modern Dictionary</title>
+    <link rel="icon" type="image/jpg" href="favicon.jpg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+      <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Aurora Background -->
+
+    <div class="aurora aurora1"></div>
+    <div class="aurora aurora2"></div>
+    <div class="aurora aurora3"></div>
+
+    <!-- Navbar -->
+
+    <nav>
+
+        <div class="logo">
+
+            <i class="fa-solid fa-book-open"></i>
+
+            <span>Lexora</span>
+
+        </div>
+
+        <div class="nav-right">
+
+            <button id="themeBtn">
+
+                <i class="fa-solid fa-moon"></i>
+
+            </button>
+
+        </div>
+
+    </nav>
+
+    <!-- Main -->
+
+    <main>
+
+        <!-- Hero -->
+
+        <section class="hero">
+
+            <h1>
+                Find the perfect definition.
+            </h1>
+
+            <p>
+
+                Search meanings, examples and synonyms with a beautiful modern experience.
+
+            </p>
+
+        </section>
+
+        <!-- Search -->
+
+        <section class="search-section">
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search any English word..."
+                    autocomplete="off"
+                >
+
+                <button id="searchBtn">
+
+                    Search
+
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- Loader -->
+
+        <section id="loader" class="hidden">
+
+            <div class="skeleton title"></div>
+
+            <div class="skeleton line"></div>
+
+            <div class="skeleton line"></div>
+
+            <div class="skeleton line short"></div>
+
+        </section>
+
+        <!-- Result -->
+
+        <section id="result" class="card hidden">
+
+            <div class="top">
+
+                <div>
+
+                    <h2 id="word"></h2>
+
+                    <span id="phonetic"></span>
+
+                </div>
+
+                <button id="favBtn">
+
+                    <i class="fa-regular fa-heart"></i>
+
+                </button>
+
+            </div>
+
+            <div id="meanings">
+
+            </div>
+
+            <div id="synonymBox">
+
+                <h3>
+
+                    Synonyms
+
+                </h3>
+
+                <div id="synonyms">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Error -->
+
+        <section id="errorCard" class="card hidden">
+
+            <div class="error-icon">
+
+                <i class="fa-solid fa-face-frown"></i>
+
+            </div>
+
+            <h2>
+
+                Word Not Found
+
+            </h2>
+
+            <p>
+
+                Try another word or check your spelling.
+
+            </p>
+
+        </section>
+
+        <!-- Grid -->
+
+        <section class="grid">
+
+            <!-- Favorites -->
+
+            <div class="glass">
+
+                <div class="heading">
+
+                    <i class="fa-solid fa-heart"></i>
+
+                    <h3>
+
+                        Favorites
+
+                    </h3>
+
+                </div>
+
+                <div id="favorites">
+
+                    <p class="empty">
+
+                        No favorites yet.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Recent -->
+
+            <div class="glass">
+
+                <div class="heading">
+
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+
+                    <h3>
+
+                        Recent Searches
+
+                    </h3>
+
+                </div>
+
+                <div id="history">
+
+                    <p class="empty">
+
+                        Nothing searched yet.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+
+            Built with HTML • CSS • JavaScript
+
+        </p>
+
+    </footer>
+
+    <!-- Toast -->
+
+    <div id="toast">
+
+        Added to Favorites
+
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
